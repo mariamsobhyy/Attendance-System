@@ -1,0 +1,471 @@
+
+/* =========================================
+   Student Risk Details - Dashboard Theme
+========================================= */
+
+.student-risk-page {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px 35px;
+    box-sizing: border-box;
+    color: #2d3748;
+}
+
+/* =========================================
+   Header
+========================================= */
+
+.student-risk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.student-risk-header h1 {
+    margin: 18px 0 8px;
+    color: #1a202c;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.student-risk-header p {
+    margin: 0;
+    color: #718096;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.student-risk-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    background: #ffffff;
+    color: #dc2626;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.student-risk-back:hover {
+    background: #dc2626;
+    color: #ffffff;
+    border-color: #dc2626;
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.18);
+}
+
+/* =========================================
+   Student Information Cards
+========================================= */
+
+.student-risk-info {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.student-risk-info > div {
+    min-width: 0;
+    padding: 27px 24px;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.student-risk-info > div:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+    transform: translateY(-3px);
+}
+
+.student-risk-info span {
+    display: block;
+    margin-bottom: 13px;
+    color: #718096;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.student-risk-info h2 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* Student Name */
+
+.student-risk-info > div:first-child h2,
+.student-risk-info > div:nth-child(2) h2 {
+    color: #dc2626;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/* =========================================
+   Risk Analysis
+========================================= */
+
+.student-risk-analysis {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.student-risk-level,
+.student-risk-reason {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.student-risk-level:hover,
+.student-risk-reason:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+.student-risk-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.student-risk-level > span:first-child {
+    color: #718096;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.student-risk-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 19px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.student-risk-badge.high {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+.student-risk-badge.medium {
+    color: #b7791f;
+    background: #fef3c7;
+}
+
+.student-risk-badge.low {
+    color: #27845a;
+    background: #dcfce7;
+}
+
+.student-risk-reason h3 {
+    margin: 0 0 15px;
+    color: #1a202c;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.student-risk-reason p {
+    margin: 0;
+    color: #718096;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   Statistics Cards
+========================================= */
+
+.student-risk-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-bottom: 35px;
+}
+
+.student-risk-card {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 28px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.student-risk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    border-color: rgba(230, 0, 40, 0.1);
+}
+
+.student-risk-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #e60028, #ff4757);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.student-risk-card:hover::before {
+    opacity: 1;
+}
+
+.student-risk-card span {
+    display: block;
+    margin-bottom: 15px;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.student-risk-card h2 {
+    margin: 0;
+    color: #1a202c;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* =========================================
+   Attendance History
+========================================= */
+
+.student-risk-history {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.student-risk-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.student-risk-section-header h2 {
+    margin: 0;
+    color: #1a202c;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+.student-risk-section-header span {
+    padding: 8px 15px;
+    color: #dc2626;
+    background: #fff1f2;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* =========================================
+   History Table
+========================================= */
+
+.student-risk-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.student-risk-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.student-risk-table thead {
+    background: #fff5f5;
+}
+
+.student-risk-table th {
+    padding: 17px 20px;
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #fee2e2;
+    white-space: nowrap;
+}
+
+.student-risk-table th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.student-risk-table th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.student-risk-table td {
+    padding: 17px 20px;
+    color: #4a5568;
+    font-size: 14px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.student-risk-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.student-risk-table tbody tr:hover {
+    background: #fffafa;
+}
+
+.student-risk-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* History Status Badges */
+
+.student-history-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 75px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.student-history-badge.absent {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+.student-history-badge.late {
+    color: #b7791f;
+    background: #fef3c7;
+}
+
+.student-history-badge.other {
+    color: #526477;
+    background: #edf2f7;
+}
+
+/* =========================================
+   Loading / Empty / Error
+========================================= */
+
+.student-risk-empty {
+    padding: 35px !important;
+    color: #a0aec0 !important;
+    text-align: center;
+    font-size: 14px !important;
+}
+
+.student-risk-error {
+    margin-top: 20px;
+    padding: 18px 22px;
+    color: #dc2626;
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================================
+   Responsive Design
+========================================= */
+
+@media (max-width: 1100px) {
+    .student-risk-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .student-risk-analysis {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .student-risk-page {
+        padding: 20px;
+    }
+
+    .student-risk-header h1 {
+        font-size: 24px;
+    }
+
+    .student-risk-analysis {
+        grid-template-columns: 1fr;
+    }
+
+    .student-risk-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .student-risk-history {
+        padding: 20px;
+    }
+
+    .student-risk-table th,
+    .student-risk-table td {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-risk-page {
+        padding: 15px;
+    }
+
+    .student-risk-info {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .student-risk-info > div,
+    .student-risk-level,
+    .student-risk-reason {
+        padding: 22px;
+    }
+
+    .student-risk-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .student-risk-card h2 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,381 @@
+
+/* ================================
+   Attendance Risk Prediction Page
+================================ */
+
+.attendance-risk-page {
+    width: 100%;
+    padding: 0;
+}
+
+/* ================================
+   Page Header
+================================ */
+
+.attendance-risk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+
+.attendance-risk-page .content-header {
+    margin-bottom: 0;
+}
+
+.attendance-risk-page .content-header h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.attendance-risk-page .content-header p {
+    color: var(--text-secondary, #718096);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ================================
+   Refresh Button - Dashboard Style
+================================ */
+
+.attendance-risk-refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.attendance-risk-refresh:hover:not(:disabled) {
+    background: #b91c1c;
+}
+
+.attendance-risk-refresh:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.refresh-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* ================================
+   Summary Cards
+================================ */
+
+.attendance-risk-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 35px;
+}
+
+.attendance-risk-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.attendance-risk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.attendance-risk-card-content span {
+    display: block;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.attendance-risk-card-content h2 {
+    color: #1a202c;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+
+.attendance-risk-card-content p {
+    color: #718096;
+    font-size: 12px;
+    margin: 0;
+}
+
+.attendance-risk-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Risk Colors */
+
+.high-card .attendance-risk-card-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.medium-card .attendance-risk-card-icon {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.total-card .attendance-risk-card-icon {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+/* ================================
+   Table Section
+================================ */
+
+.attendance-risk-table-section {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.attendance-risk-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.attendance-risk-table-header h2 {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+
+.attendance-risk-table-header p {
+    color: #718096;
+    font-size: 13px;
+    margin: 0;
+}
+
+.attendance-risk-record-count {
+    background: #f8f9fa;
+    color: #2c3e50;
+    padding: 9px 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ================================
+   Table
+================================ */
+
+.attendance-risk-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.attendance-risk-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.attendance-risk-table thead {
+    background: #f8f9fa;
+}
+
+.attendance-risk-table th {
+    padding: 16px;
+    color: #6c757d;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.attendance-risk-table td {
+    padding: 17px 16px;
+    color: #2c3e50;
+    font-size: 14px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.attendance-risk-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.attendance-risk-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.attendance-risk-student-id {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* ================================
+   Student Name Link
+================================ */
+
+.attendance-risk-student-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #e60028;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+}
+
+.attendance-risk-student-link:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   Risk Badges
+================================ */
+
+.attendance-risk-badge {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.attendance-risk-badge.high {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.attendance-risk-badge.medium {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+/* ================================
+   Empty State
+================================ */
+
+.attendance-risk-empty {
+    text-align: center;
+    padding: 35px !important;
+    color: #718096 !important;
+}
+
+/* ================================
+   Loading
+================================ */
+
+.attendance-risk-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+    color: #718096;
+    gap: 15px;
+}
+
+.attendance-risk-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #e60028;
+    border-radius: 50%;
+    animation: attendanceRiskSpin 0.8s linear infinite;
+}
+
+@keyframes attendanceRiskSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ================================
+   Error
+================================ */
+
+.attendance-risk-error {
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    color: #c53030;
+}
+
+.attendance-risk-error button {
+    margin-top: 10px;
+    padding: 9px 18px;
+    background: #e60028;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 992px) {
+    .attendance-risk-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .attendance-risk-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+
+    .attendance-risk-refresh {
+        align-self: flex-start;
+    }
+
+    .attendance-risk-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .attendance-risk-table-section {
+        padding: 18px;
+    }
+
+    .attendance-risk-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

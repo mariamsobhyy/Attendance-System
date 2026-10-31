@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "recipientUserId": 7800,
+    "message": "Student Youssef Mahmoud Samir Mahmoud  in S4 was absent in session(s): 5, 6, 8 on 2026-04-14.",
+    "classId": 12,
+    "sessionsMissing": null,
+    "date": "2026-04-14",
+    "isRead": true,
+    "createdAt": "2026-04-14T09:44:02.5121817Z"
+  },
+  {
+    "id": 2,
+    "recipientUserId": 7800,
+    "message": "Student gamal yahia abd elsameaa ibrahim in S4 was absent in session(s): 6, 8 on 2026-04-14.",
+    "classId": 12,
+    "sessionsMissing": null,
+    "date": "2026-04-14",
+    "isRead": true,
+    "createdAt": "2026-04-14T09:44:02.5121817Z"
+  },
+  {
+    "id": 3,
+    "recipientUserId": 7800,
+    "message": "Student Toqa Ahmed Fathy Abd El-qader in S4 was absent in session(s): 6, 8 on 2026-04-14.",
+    "classId": 12,
+    "sessionsMissing": null,
+    "date": "2026-04-14",
+    "isRead": true,
+    "createdAt": "2026-04-14T09:44:02.5121817Z"
+  },
+  {
+    "id": 4,
+    "recipientUserId": 7800,
+    "message": "Student malak hasan ahmad hasan eabdalfataah in S3 was absent in session(s): 3, 4, 5, 6, 7, 8 on 2026-09-11.",
+    "classId": 11,
+    "sessionsMissing": null,
+    "date": "2026-09-11",
+    "isRead": false,
+    "createdAt": "2026-09-25T11:41:22.3340283Z"
+  },
+  {
+    "id": 5,
+    "recipientUserId": 7800,
+    "message": "Student husain hisham husain yunis in S3 was absent in session(s): 3, 4, 5, 6, 7, 8 on 2026-09-11.",
+    "classId": 11,
+    "sessionsMissing": null,
+    "date": "2026-09-11",
+    "isRead": false,
+    "createdAt": "2026-09-25T11:41:22.3340283Z"
+  }
+]
